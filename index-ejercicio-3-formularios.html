@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pago</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link href="styles-ejercicio-3-formularios.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h3>Pago</h3>
+            <form>
+                <label for="cc-número">Número de tarjeta de crédito<input type="number" min="0000000000000000" max="9999999999999999" id="cc-número"><span>Ingrese el nro. de su tarjeta sin guiones ni espacios</span></label>
+
+                <label for="nombre-titular">Nombre completo del titular<input type="text" id="nombre-titular"></label>
+
+                <label for="mes-expiración">Mes de expiración
+                    <select name="mes-expiración" id="mes-expiración">
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                        <option value=10>10</option>
+                        <option value=11>11</option>
+                        <option value=12>12</option>
+                    </select>
+                </label>
+
+                <label for="año-expiración">Año de expiración <input type="number" min=2021 max=2031 id="año-expiración"></label>
+
+                <label for="ccv">CCV (código de seguridad) <input type="password" maxlength="3" id=ccv></label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>
